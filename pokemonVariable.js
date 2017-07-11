@@ -1,0 +1,35 @@
+var dialgaHP = 100;
+var dialgaNum = 483;
+var dialgaType = "Dragon and Steel";
+var dialgaBestMove = "Aurasphere";
+var dialgaLastEvo = true;
+var dialgaAttack = 120;
+var dialgaDefense = 120;
+var dialgaSpeed = 90;
+var dialgaSpAttack = 150;
+var dialgaSpDefense = 100;
+dialgaHP = dialgaHP - 50;
+
+var absolHP = 65;
+var absolNum = 359;
+var absolType = "Dark";
+var absolBestMove = "Psycho Cut";
+var absolLastEvo = true;
+var absolAttack = 130;
+var absolDefense = 60;
+var absolSpeed = 75;
+var absolSpAttack = 75;
+var absolSpDefense = 60;
+absolHP = absolHP - 50;
+
+var zoruaHP = 40;
+var zoruaNum = 570;
+var zoruaType = "Dark";
+var zoruaBestMove = "Night Daze";
+var zoruaLastEvo = false;
+var zoruaAttack = 65;
+var zoruaDefense = 40;
+var zoruaSpeed = 65;
+var zoruaSpAttack = 80;
+var zoruaSpDefense = 40;
+zoruaHP = zoruaHP - 50;
