@@ -16,7 +16,7 @@ secondQuestion.push(fight);
 
 // Function that answers //
 function answer(index){
-    console.log("You fought " + secondQuestion[Math.floor(Math.random() * secondQuestion.length)] + " in the " + mashArray[Math.floor(Math.random() * mashArray.length)] + " and hit them " + firstQuestion[Math.floor(Math.random() * firstQuestion.length)] + " times. Too bad. Mewtwo wins! ");
+    console.log("You fought " + secondQuestion.pop() + " in the " + mashArray[Math.floor(Math.random() * mashArray.length)] + " and hit them " + firstQuestion.pop() + " times. Too bad. Mewtwo wins! ");
 }
 strikeFight();
 answer();
