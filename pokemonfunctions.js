@@ -10,10 +10,13 @@ console.log(alphabet[randLetter(alphabet.length)]);
 
 
 function randWord(index){
+    var word = "";
+    for(var i = 0; i < 6; i++){
+        word = word + randLetter(Math.floor(Math.random() * index));
+    }
     
-    return Math.floor(Math.random() * index) + Math.floor(Math.random() * index)
+    return word 
 }
-Math.random() * alphabet.length
 
-console.log(alphabet[randWord(Math.floor(Math.random() * alphabet.length))])
+console.log(randWord());
 
