@@ -27,10 +27,12 @@ var pokemonRoster = [
     pokemonAttacked();
     printRoster();
 
+
+
 function subtractHP() {
     var prompt = require('prompt-sync')();
     var minusHP = prompt("How much HP would you like to subtract? ");
-    console.log("You took away " + minusHP + " from " + )
+    console.log("You took away " + minusHP + " from " + pokemonRoster)
  }
 
  subtractHP();
