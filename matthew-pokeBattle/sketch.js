@@ -17,7 +17,8 @@ function setup() {
     background(200)
     fill(70)
     rect(0,600,windowWidth,300)
-    alert("WILD " + Math.floor(Math.random() * pokemonRoster["name"]) + " APPEARS")
+    alert("WILD " + Math.floor(random() * (pokemonRoster["name"])) + " APPEARS")
+
     
     // Buttons to press for options
     button1 = createButton('Attack');
@@ -25,6 +26,7 @@ function setup() {
     button1.mousePressed(attack)
     button2 = createButton('Defend');
     button2.position(480, 685);
+    button2.mousePressed(defend)
     button3 = createButton('Heal');
     button3.position(840, 685);
     button4 = createButton('Run');
@@ -36,8 +38,23 @@ var attacks = ["Tackle" , "Pound" , "Scratch"]
 
 function attack() {
     var attackPicked = prompt("Attack with " + attacks[0] + " , " + attacks[1] + " or " + attacks[2] + " ?");
-    alert("You attacked with " + attackPicked )
+    alert("You attacked with " + attackPicked + " !")
 
+}
+
+var defense = [true , false , true , false]
+var randomDefense = defense[Math.floor(Math.random() * defense.length)]
+
+function defend() {
+    alert("You defended!")
+    if (randomDefense == true) {
+        alert("It worked!")
+       
+    } else if (randomDefense == false) {
+        alert("It failed!")
+        
+    } 
+    
 }
 
 function draw() {
@@ -68,8 +85,12 @@ function draw() {
     ellipse(950,150,150,150)
 
     //HP Bars
-    fill(0,255,0)
-    rect(525,500,150,25)
+    // fill(0,255,0)
+    // rect(525,500,150,25)
+
+    textSize(10)
+    fill('white')
+    text("You can only use this once. Be wise..." , 420 , 725 )
 } 
 
 
