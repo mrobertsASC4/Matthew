@@ -1,12 +1,12 @@
 body {
     margin: 20px;
-    font-family: Arial;
-    color: gray;
+    font-family: 'Franklin Gothic Medium';
+    color: black;
 }
 
 h1 {
     text-align: center;
-    color: white;
+    color:red;
 }
 
 html {
@@ -23,4 +23,33 @@ img {
     margin-left: auto;
     border-radius: 2px;
     border: 2px solid white
+}
+
+#bio {
+    background-color:white;
+
+    
+}
+
+.content {
+    
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
 }
