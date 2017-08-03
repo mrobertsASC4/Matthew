@@ -1,0 +1,79 @@
+html, body, #page-one, #page-two, #page-three, #page-four {
+	height:auto;
+	min-height: 100vh;
+}
+
+#page-one, #page-two, #page-three, #page-four {padding-top:2em;}
+
+#mainNav {
+  background: linear-gradient(to bottom, aqua,white);
+  color: black;
+  line-height:4em;
+  padding:0 1em;
+  position:fixed; 
+  top: 0em; 
+  width:100%; 
+
+}
+
+#mainNav {
+  a, a:link, a:visited, a:hover, a:active {
+    color:white; 
+    text-decoration:none;
+    display:inline-block;
+    padding:0 10em;
+  }
+  a:hover {color:white;}
+}
+
+h2 {font-size:3em; padding-top:1em; padding-left:450px; text-align:center;}
+
+#page-one {background-color:#fff;}
+#page-two {background-image:url('https://images6.alphacoders.com/373/373090.jpg')}
+#page-two {background-size: cover;}
+#page-three {background-color:#aaa;}
+#page-four {background-color:#888;}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+
+}
+
+h3 {font-size:3em; padding-top:1em; padding-top:10px; text-align:center;}
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+img {
+    border-radius: 500px;
+    float: left;
+
+    
+}
+
+a {
+    padding: 0px 25px;
+}
+
+p {
+    text-align: center;
+    float: right;
+    font-size: 25px;
+    font-family: Courier New, Courier, monospace;
+    color: white;
+
+}
+
+.icons {
+    display: inline;
+}
+
+navbar navbar-default {
+    padding: 10px 50px;
+}
+
+
+
+
