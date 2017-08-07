@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>R P S !</title>
+
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
+    <!--custom files-->
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1><center>Rock, Paper, Scissors</center></h1>
+   
+    <div class="userContainer">
+
+        <form>
+            <div class="textContainer">
+                <div>
+                    <p>Your name:</p><input id="name" type="text">
+                </div>
+                
+            </div>
+            <div class="GObutton">
+                <input type="reset" onclick="updateDB();" value="Submit/Update">
+            </div>
+        </form>
+    </div>
+     <p>Pick an option:</p>  
+     <input type="button" id="button1" onclick="rock1();" value="Rock">
+     <input type="button" id="button2" onclick="paper1();" value="Paper">
+     <input type="button" id="button3" onclick="scissors1();"value="Scissors">
+     <div id = "result">
+         </div>
+   
+</body>

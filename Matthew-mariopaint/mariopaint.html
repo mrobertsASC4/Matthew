@@ -2,8 +2,55 @@
     <head>
             <script src="mariopaint.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script> 
-            </script>
-        </head>
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mario Paint!</title>
+
+    <!--Reference platform.js library here
+    592056830069-5ecmmhjbcopeapee54fqoel9vjgg6omd.apps.googleusercontent.com-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--Reference Client ID in meta tag here-->
+    <meta name="google-signin-client_id" content="592056830069-5ecmmhjbcopeapee54fqoel9vjgg6omd.apps.googleusercontent.com">
+
+
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <script src="lib/js/main.js"></script>
+    <link rel="stylesheet" href="lib/css/style.css">
+
+    
+    
+    </head>
     <body>
+        <div class="signs">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+    </div>
+
+
+    <div class ="mainContainer">
+        <!--Text greeting user-->
+        <header>
+            <h1>WELCOME: <span class="userName">GUEST</span></h1>    
+        </header>
+
+        <!--Populate section with user data-->
+        <section>
+            
+             <!--picture-->
+            <div class = "userImg">
+                <img src="assets/placeholder.png">
+            </div>
+
+            <!--User Data-->
+            <div class="userData">
+                <h2>E-MAIL:</h2>
+                <p class="email"></p>
+            </div>
+        </section>
+    </div>
     </body>
 </html>

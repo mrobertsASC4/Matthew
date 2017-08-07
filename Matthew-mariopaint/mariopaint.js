@@ -19,11 +19,13 @@ for (var i = 0; i < 100; i++) {
 } */
 
 
-
-background(0,74,198)
+function setup() {
+  background('white')
+}
 
 function draw() {
-    resizeCanvas(1000,1000)
+    resizeCanvas(windowWidth,windowHeight)
+    
    console.log(mouseX,mouseY)
 }
 
@@ -45,7 +47,7 @@ function setRandomColor() {
  
  
  function mouseDragged() {
-   var shapes = [ ellipse(mouseX,mouseY,40,40), rect(mouseX,mouseY,100,100), ellipse(mouseY,mouseX,40,40), rect(mouseY,mouseX,100,100)];
+   var shapes = [ ellipse(mouseX,mouseY,40,40)];
    var word = random(shapes);
    word
    fill(getRandomColor())
