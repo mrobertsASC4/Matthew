@@ -1,29 +1,113 @@
 #button1 {
-  background-color: aqua;
-  color: black;
+  
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+  background-color:black;
+  color: white;
   
   padding: 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+#button1:hover {
+     background: linear-gradient(red, yellow);
 }
 
 #button2 {
-  background-color: aqua;
-  color: black;
+  
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+  background-color: black;
+  color: white;
   
   padding: 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+#button2:hover {
+     background: linear-gradient(red, yellow);
 }
 
 #button3 {
-  background-color: aqua;
-  color: black;
+  
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:50px;
+  background-color: black;
+  color: white;
   
   padding: 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  height: 200px;
+  width: 200px;
 }
+
+#button3:hover {
+     background: linear-gradient(red, yellow);
+}
+
+.buttons {
+  padding-left: 375px;
+
+}
+
+
+
+body {
+  background: linear-gradient(270deg, #83ff00, #009dff);
+background-size: cover;
+
+-webkit-animation: 30s ease infinite;
+animation: 30s ease infinite;
+}
+
+@-webkit-keyframes {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+  
+
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+
+}
+
+p {
+  color: white;
+  
+}
+
+#result {
+  color: white;
+}
+
+#submit {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+  background-color:black;
+  color: white;
+  width: 300px;
+  height: 100px;
+}
+
+#submit:hover {
+    background: linear-gradient(red, yellow);
+}
+

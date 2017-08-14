@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>R P S !</title>
+    <link rel="shortcut icon" href="favicon1.ico" />
 
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAKvKe51Z7XvhxwGYSFDjpq-6H90dJQ2Wg",
+    authDomain: "rpsshoot-77c4f.firebaseapp.com",
+    databaseURL: "https://rpsshoot-77c4f.firebaseio.com",
+    projectId: "rpsshoot-77c4f",
+    storageBucket: "",
+    messagingSenderId: "725202240261"
+  };
+  firebase.initializeApp(config);
+    </script>
+    
+    
     <!--jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!--google fonts-->
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
     <!--custom files-->
     <script src="main.js"></script>
@@ -20,6 +37,8 @@
 </head>
 
 <body>
+    
+    
     <h1><center>Rock, Paper, Scissors</center></h1>
    
     <div class="userContainer">
@@ -27,20 +46,30 @@
         <form>
             <div class="textContainer">
                 <div>
-                    <p>Your name:</p><input id="name" type="text">
+                    <p><center><font color="white">Your name:</font></center></p><center><input id="name" type="text"></center>
                 </div>
                 
             </div>
             <div class="GObutton">
-                <input type="reset" onclick="updateDB();" value="Submit/Update">
+                <center><input type="reset" onclick="updateDB();" value="Submit"></center>
             </div>
         </form>
     </div>
-     <p>Pick an option:</p>  
-     <input type="button" id="button1" onclick="rock1();" value="Rock">
-     <input type="button" id="button2" onclick="paper1();" value="Paper">
-     <input type="button" id="button3" onclick="scissors1();"value="Scissors">
+     <p><center><font color="white">Pick an option:</font></center></p>  
+     <div class ="buttons"> 
+         
+        <input type="button" id="button1" onclick="rock1();" value="Rock">
+        <input type="button" id="button2" onclick="paper1();" value="Paper">
+        <input type="button" id="button3" onclick="scissors1();"value="Scissors">
+     
+     </div>
      <div id = "result">
          </div>
-   
+     <div id = "score">
+     </div>
+     <input type="button" id="submit" onclick="submitScore();"value="Submit Score">
+     <p><font size="5"> Leaderboard: </font></p>
+     
+
 </body>
+</html>

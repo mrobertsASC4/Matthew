@@ -10,3 +10,4 @@ $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
 			}
 		}
 	});
+
